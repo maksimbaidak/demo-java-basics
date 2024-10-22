@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        .form {
+            width: 30%;
+            background:gray;
+            margin: auto;
+            border-radius:5px;
+        }
+        .field {
+            box-sizing: border-box;
+            float: left;
+            margin: 2%;
+            width: 46%;
+            font-size: 15pt;
+            border-radius:5px;
+        }
+        #message {
+            margin: 2%;
+            width: 96%;
+            box-sizing: border-box;
+            font-size: 15pt;
+            border-radius:5px;
+        }
+        #button {
+            background:orange;
+            margin: 2%;
+            width: 96%;
+            box-sizing: border-box;
+            font-size: 15pt;
+            border-radius:5px;
+        }
+        @media screen and (max-width: 992px) {
+            .form {
+                width: 100%;
+            }
+            .field{
+                width: 96%;
+                font-size: 60pt;
+            }
+            #message {
+                font-size: 60pt;
+            }
+            #button {
+                font-size: 60pt;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            .field{
+                width: 96%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <p>Мы были бы рады получить известия от вас!</p>
+        <h1>Связаться с нами</h1>
+        <input class="field" type="text" placeholder="Email">
+        <input class="field" type="text" placeholder="Name">
+        <input class="field" type="text" placeholder="Address">
+        <input class="field" type="text" placeholder="Phone">
+        <textarea id="message" placeholder="Your message"></textarea>
+        <button type="submit" id="button">ПРЕДСТАВЛЯТЬ НА РАССМОТРЕНИЕ</button>
+    </form>
+</body>
+</html>
